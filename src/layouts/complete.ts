@@ -54,9 +54,9 @@ export function formatCompleteLayout(
   var iconToAppend = "";
   // Set status and elapsedSeconds
   if (conclusion.toLocaleUpperCase() === "FAILURE") {
-    iconToAppend = `<emoji id="noentry"></emoji>`;
+    iconToAppend = `(& #x1F642;) &#x1F621`;
   } else if (conclusion.toLocaleUpperCase() === "SUCCESS") {
-    iconToAppend = `<emoji id="noentry"></emoji>`;
+    iconToAppend = `(& #x1F642;) &#x1F621`;
   }
   let labels = `\`${conclusion.toUpperCase()}\``;
   if (elapsedSeconds) {
