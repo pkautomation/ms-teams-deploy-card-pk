@@ -54,9 +54,10 @@ export function formatCompleteLayout(
   var iconToAppend = "";
   // Set status and elapsedSeconds
   if (conclusion.toLocaleUpperCase() === "FAILURE") {
-    iconToAppend = "(noentry) 	\xE2\x9C\x85 \xE2\x9D\x8C";
+    iconToAppend = "2(noentry) 	\xE2\x9C\x85 \xE2\x9D\x8C \x3C \xD8 \x02 \xDF";
   } else if (conclusion.toLocaleUpperCase() === "SUCCESS") {
-    iconToAppend = "(checkmarkbutton) 	\xE2\x9C\x85 \xE2\x9D\x8C";
+    iconToAppend =
+      "2(checkmarkbutton) 	\xE2\x9C\x85 \xE2\x9D\x8C \x3C \xD8 \x02 \xDF";
   }
   let labels = `\`${conclusion.toUpperCase()}\``;
   if (elapsedSeconds) {

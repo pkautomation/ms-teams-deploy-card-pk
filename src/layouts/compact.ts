@@ -17,7 +17,7 @@ export function formatCompactLayout(
   // Set status and elapsedSeconds
   let labels = `\`${conclusion.toUpperCase()}\``;
   if (elapsedSeconds) {
-    labels = `\`${conclusion.toUpperCase()} [${elapsedSeconds}s]\``;
+    labels = `\`${conclusion.toUpperCase()}\``;
   }
 
   // Set environment name
