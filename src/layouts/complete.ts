@@ -54,9 +54,9 @@ export function formatCompleteLayout(
   var iconToAppend = "";
   // Set status and elapsedSeconds
   if (conclusion.toLocaleUpperCase() === "FAILURE") {
-    iconToAppend = `(& #x1F642;) &#x1F621`;
+    iconToAppend = `🔴`;
   } else if (conclusion.toLocaleUpperCase() === "SUCCESS") {
-    iconToAppend = `(& #x1F642;) &#x1F621`;
+    iconToAppend = `🟢`;
   }
   let labels = `\`${conclusion.toUpperCase()}\``;
   if (elapsedSeconds) {
@@ -66,7 +66,7 @@ export function formatCompleteLayout(
   // Set section facts
   section.facts = [
     new Fact("Status:", labels),
-    new Fact("Repository & branch:", `[${branchUrl}](${branchUrl})`),
+    //new Fact("Repository & branch:", `[${branchUrl}](${branchUrl})`),
   ];
 
   // Set custom facts
