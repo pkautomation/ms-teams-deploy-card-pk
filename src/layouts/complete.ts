@@ -54,10 +54,9 @@ export function formatCompleteLayout(
   var iconToAppend = "";
   // Set status and elapsedSeconds
   if (conclusion.toLocaleUpperCase() === "FAILURE") {
-    iconToAppend = "2(noentry) 	\xE2\x9C\x85 \xE2\x9D\x8C \x3C \xD8 \x02 \xDF";
+    iconToAppend = `<emoji id="noentry"></emoji>`;
   } else if (conclusion.toLocaleUpperCase() === "SUCCESS") {
-    iconToAppend =
-      "2(checkmarkbutton) 	\xE2\x9C\x85 \xE2\x9D\x8C \x3C \xD8 \x02 \xDF";
+    iconToAppend = `<emoji id="noentry"></emoji>`;
   }
   let labels = `\`${conclusion.toUpperCase()}\``;
   if (elapsedSeconds) {
@@ -67,10 +66,6 @@ export function formatCompleteLayout(
   // Set section facts
   section.facts = [
     new Fact("Status:", labels),
-    new Fact(
-      "Commit message:",
-      escapeMarkdownTokens(commit.data.commit.message)
-    ),
     new Fact("Repository & branch:", `[${branchUrl}](${branchUrl})`),
   ];
 

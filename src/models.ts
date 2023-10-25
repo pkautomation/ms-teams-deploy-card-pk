@@ -32,6 +32,6 @@ export class CardSection {
 export class WebhookBody {
   summary: string = "Github Actions CI";
   text?: string;
-  themeColor: string = "FFF49C";
+  themeColor: string = "#9cdbff";
   sections: CardSection[] = [];
 }

@@ -21,7 +21,7 @@ try {
     } else {
       info("Configured to not show card upon job exit");
     }
-  }, 2000);
+  }, 5000);
 } catch (error) {
   setFailed(error.message);
 }
